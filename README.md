@@ -18,11 +18,11 @@ To run sql statements from an external file, use the `\i [filepath]` command.
 
 Enable timing queries in Postgres by toggling the `\timing` command in the psql shell.
 
-1. Run a query to get a list of all `make_title` values from the `car_models` table where the `make_code` is `'LAM'`, without any duplicate rows, and note the time somewhere. (should have 71 results)
-1. Run a query to list all `model_title` values where the `make_code` is `'NISSAN'`, and the `model_code` is `'GT-R'` without any duplicate rows, and note the time somewhere. (should have 30 results)
+1. Run a query to get a list of all `make_title` values from the `car_models` table where the `make_code` is `'LAM'`, without any duplicate rows, and note the time somewhere. (should have 1 result)
+1. Run a query to list all `model_title` values where the `make_code` is `'NISSAN'`, and the `model_code` is `'GT-R'` without any duplicate rows, and note the time somewhere. (should have 1 result)
 1. Run a query to list all `make_code`, `model_code`, `model_title`, and year from `car_models` where the `make_code` is `'LAM'`, and note the time somewhere. (should have 1360 rows)
-1. Run a query to list all fields from all `car_models` in years between `2010` and `2015`, and note the time somewhere (should have 7884 rows)
-1. Run a query to list all fields from all `car_models` in the year of `2010`, and note the time somewhere (should have 7884 rows)
+1. Run a query to list all fields from all `car_models` in years between `2010` and `2015`, and note the time somewhere (should have 78840 rows)
+1. Run a query to list all fields from all `car_models` in the year of `2010`, and note the time somewhere (should have 13140 rows)
 
 ## Indexing
 
@@ -40,11 +40,11 @@ Record your index statements in `indexing.sql`
 
 Write the following statements in `indexing.sql`
 
-1. Create a query to get a list of all `make_title` values from the `car_models` table where the `make_code` is `'LAM'`, without any duplicate rows, and note the time somewhere. (should have 71 results)
-1. Create a query to list all `model_title` values where the `make_code` is `'NISSAN'`, and the `model_code` is `'GT-R'` without any duplicate rows, and note the time somewhere. (should have 30 results)
+1. Create a query to get a list of all `make_title` values from the `car_models` table where the `make_code` is `'LAM'`, without any duplicate rows, and note the time somewhere. (should have 1 result)
+1. Create a query to list all `model_title` values where the `make_code` is `'NISSAN'`, and the `model_code` is `'GT-R'` without any duplicate rows, and note the time somewhere. (should have 1 result)
 1. Create a query to list all `make_code`, `model_code`, `model_title`, and year from `car_models` where the `make_code` is `'LAM'`, and note the time somewhere. (should have 1360 rows)
-1. Create a query to list all fields from all `car_models` in years between `2010` and `2015`, and note the time somewhere (should have 7884 rows)
-1. Create a query to list all fields from all `car_models` in the year of `2010`, and note the time somewhere (should have 7884 rows)
+1. Create a query to list all fields from all `car_models` in years between `2010` and `2015`, and note the time somewhere (should have 78840 rows)
+1. Create a query to list all fields from all `car_models` in the year of `2010`, and note the time somewhere (should have 13140 rows)
 
 Compare the times of the queries before and after the table has been indexes.  
 
