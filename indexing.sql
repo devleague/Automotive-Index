@@ -48,3 +48,8 @@ CREATE DATABASE indexed_cars WITH OWNER indexed_cars_user;
   WHERE year 
   BETWEEN 2010
   AND 2015;
+
+\timing
+  SELECT *
+  FROM car_models
+  WHERE year = 2010;
