@@ -90,3 +90,4 @@ CREATE INDEX index_model
   FROM car_models
   WHERE year = 2010;
 \timing
+
