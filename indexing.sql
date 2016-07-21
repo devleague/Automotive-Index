@@ -1,3 +1,5 @@
+\pset pager off
+
 DROP USER IF EXISTS indexed_cars_user;
 CREATE USER indexed_cars_user;
 
@@ -22,13 +24,24 @@ CREATE DATABASE indexed_cars
 
 \timing
 
-SELECT make_title
+SELECT DISTINCT make_title
   FROM car_models
-  WHERE make_code = 'LAM'
-  LIMIT 1;
+  WHERE make_code = 'LAM';
 
 SELECT model_title
   FROM car_models
   WHERE make_code = 'NISSAN'
-    AND model_code = 'GT-R'
-  LIMIT 1;
+    AND model_code = 'GT-R';
+
+SELECT count(*)
+  FROM car_models
+  WHERE make_code = 'LAM';
+
+SELECT count(*)
+  FROM car_models
+  WHERE year
+    BETWEEN 2010 AND 2015;
+
+SELECT count(*)
+  FROM car_models
+  WHERE year = 2010;
