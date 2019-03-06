@@ -14,7 +14,7 @@ To run sql statements from an external file, load them into your RDBMS client an
 
 ## Timing Select Statements
 
-After each query is made, DBeaver should have a section at the bottom that tells you how long each query took.
+After each query is made, your RDBMS client should have a some output that tells you how long each query took.
 
 1. Run a query to get a list of all `make_title` values from the `car_models` table where the `make_code` is `'LAM'`, without any duplicate rows, and note the time somewhere. (should have 1 result)
 1. Run a query to list all `model_title` values where the `make_code` is `'NISSAN'`, and the `model_code` is `'GT-R'` without any duplicate rows, and note the time somewhere. (should have 1 result)
