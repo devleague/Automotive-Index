@@ -44,7 +44,7 @@ Write the following statements in `indexing.sql`
 1. Create a query to list all fields from all `car_models` in years between `2010` and `2015`, and note the time somewhere (should have 78840 rows)
 1. Create a query to list all fields from all `car_models` in the year of `2010`, and note the time somewhere (should have 13140 rows)
 
-Compare the times of the queries before and after the table has been indexes.  
+Compare the times of the queries before and after the table has been indexes.
 
 Why are queries #4 and #5 not running faster?
 
