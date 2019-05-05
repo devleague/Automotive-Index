@@ -4,17 +4,21 @@
 
 To run sql statements from an external file, load them into your RDBMS client and run the commands from there.
 
+## Docker Setup
+
+Set your database name to be `indexed_cars`.  
+Set your database username to be `indexed_cars_user`.  
+Set your database password to be `indexedPassword`.  
+
 ## Setting up
 
-1. Create a new postgres user named `indexed_cars_user`
-1. Create a new database named `indexed_cars` owned by `indexed_cars_user`
 1. Run the provided `scripts/car_models.sql` script on the `indexed_cars` database
 1. Run the provided `scripts/car_model_data.sql` script on the `indexed_cars` database **10 times**  
    _there should be **223380** rows in `car_models`_
 
 ## Timing Select Statements
 
-After each query is made, your RDBMS client should have a some output that tells you how long each query took.
+After each query is made, your RDBMS client should have a some output that tells you how long each query took. For psql, you can use the `\timing` command to turn on/off query timing.
 
 1. Run a query to get a list of all `make_title` values from the `car_models` table where the `make_code` is `'LAM'`, without any duplicate rows, and note the time somewhere. (should have 1 result)
 1. Run a query to list all `model_title` values where the `make_code` is `'NISSAN'`, and the `model_code` is `'GT-R'` without any duplicate rows, and note the time somewhere. (should have 1 result)
